@@ -2,7 +2,7 @@ Package.describe({
   name: 'kukasix:autoform-reactive-froala',
   version: '0.0.1',
   summary: 'Reactive Autoform Package of Froala v2. Has templates and S3 image upload.',
-  git: '',
+  git: 'https://github.com/kuka/autoform-reactive-froala',
   documentation: 'README.md'
 });
 
