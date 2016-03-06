@@ -1,7 +1,6 @@
 accounts-base@1.2.2
 aldeed:autoform@5.7.1
 aldeed:simple-schema@1.1.0
-alexche:autoform-froala-editor@0.0.4
 autoupdate@1.2.4
 babel-compiler@5.8.24_1
 babel-runtime@0.1.4
@@ -42,9 +41,9 @@ iron:middleware-stack@1.0.11
 iron:router@1.0.12
 iron:url@1.0.11
 jquery@1.11.4
+kukasix:autoform-reactive-froala@0.0.1
 lepozepo:s3@5.1.5
 livedata@1.0.15
-local-test:alexche:autoform-froala-editor@0.0.4
 localstorage@1.0.5
 logging@1.0.8
 meteor@1.1.10
@@ -70,7 +69,6 @@ spacebars@1.0.7
 spacebars-compiler@1.0.7
 templating@1.1.5
 templating-tools@1.0.0
-tinytest@1.0.6
 tracker@1.0.9
 ui@1.0.8
 underscore@1.0.4

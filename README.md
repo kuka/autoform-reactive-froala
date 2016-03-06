@@ -2,11 +2,11 @@
 Froala v2 WYSIWYG editor for autoform with templating ability and S3 image upload.
 Templating dropdowns can be assigned in schema by "customDropdowns" option, images are going to your S3 bucket by S3.knox client with "froala/" prefix
 
-# Install
+## Install
 
 `meteor add kukasix:autoform-reactive-froala`
 
-# Example:
+## Example:
 
 ```coffee
 "doc.template":
@@ -39,10 +39,10 @@ Templating dropdowns can be assigned in schema by "customDropdowns" option, imag
                 'Fax': '[CustomerFax]'
 ```
 
-# Reactive
+## Reactive
 
 Reacitivity works, but the code’s a bit dirty as it was made to get a solution for existing Meteor codebase with Autoform. This repo is a hard fork of [froala:froala-reactive](https://github.com/froala/froala-reactive) and [alexche:autoform-froala-editor](https://github.com/alxche/autoform-froala-editor/).
 
-# Pull Requests
+## Pull Requests
 
 Anyone wishing to clean the code is welcome to do so anytime.
