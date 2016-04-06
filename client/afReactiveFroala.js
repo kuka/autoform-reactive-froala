@@ -108,6 +108,8 @@ Template.afReactiveFroala.onDestroyed(function () {
 
 /** Initialise Froala Editor instance */
 function initEditor(self, data, lastData, $input, froalaMethod, dropdownOptions) {
+
+  $.FroalaEditor.DEFAULTS.key = Meteor.settings.public.froalaKey;
   
   // Assign basic editor variables
   data.inlineMode = false;
