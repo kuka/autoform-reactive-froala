@@ -110,7 +110,7 @@ Template.afReactiveFroala.onDestroyed(function () {
 function initEditor(self, data, lastData, $input, froalaMethod, dropdownOptions) {
 
   $.FroalaEditor.DEFAULTS.key = Meteor.settings.public.froalaKey;
-  
+
   // Assign basic editor variables
   data.inlineMode = false;
   data.buttons = [];
@@ -120,6 +120,7 @@ function initEditor(self, data, lastData, $input, froalaMethod, dropdownOptions)
   data.inlineMode = dropdownOptions.inlineMode;
   data.toolbarButtons = dropdownOptions.buttons;
   data.toolbarButtonsMD = dropdownOptions.buttons;
+  data.toolbarButtonsSM = dropdownOptions.buttons;
   data.toolbarButtonsXS = dropdownOptions.buttons;
 
   if(dropdownOptions.imageUploadURL) {
