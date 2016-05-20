@@ -14,7 +14,8 @@ Package.onUse(function(api) {
     'froala:editor@2.0.1_1',
     'templating@1.0.0',
     'aldeed:autoform@5.7.1', 
-    'iron:router@1.0.12'
+    'iron:router@1.0.12',
+    'reactive-var@1.0.9'
   ], [
     'client', 
     'server'
