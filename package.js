@@ -1,17 +1,19 @@
 Package.describe({
   name: 'kukasix:autoform-reactive-froala',
-  version: '0.0.2',
+  version: '0.0.3',
   summary: 'Reactive Autoform Package of Froala v2. Has templates and S3 image upload.',
   git: 'https://github.com/kuka/autoform-reactive-froala',
   documentation: 'README.md'
 });
 
-Npm.depends({ "busboy": "0.2.9" });
+Npm.depends({
+  'aws-sdk' : '2.4.9',
+  'busboy'  : '0.2.13'
+});
 
 Package.onUse(function(api) {
   api.use([
-    'lepozepo:s3@5.1.5',
-    'froala:editor@2.0.1_1',
+    'froala:editor@2.3.4',
     'templating@1.0.0',
     'aldeed:autoform@5.7.1', 
     'iron:router@1.0.12',
@@ -20,12 +22,14 @@ Package.onUse(function(api) {
     'client', 
     'server'
   ]);
+
   api.addFiles([
     'client/autoform-reactive-froala.js',
     'client/afReactiveFroala.html', 
-    'client/afReactiveFroala.js'
+    'client/afReactiveFroala.js',
   ], 'client');
-  
-  // there is a bug with Router.onBeforeAction
-  api.addFiles([ 'server/imageUpload.js' ], 'server');
+
+  api.addFiles([
+   'server/imageUpload.js'
+  ], 'server');
 });
